@@ -8,7 +8,7 @@ const port = 3000;
 const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
-app.use('/campsites',campsiteRouter)
+app.use('/campsites/',campsiteRouter)
 
 
 app.listen(port, hostname, () => {
